@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/peak-logo",
+  "version": "0.1.0",
+  "title": "Peak Logo",
+  "category": "widgets",
+  "icon": "site",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  },
+  "textdomain": "peak-logo",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

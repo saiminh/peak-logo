@@ -1,0 +1,39 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.peak-logo-svg {
+  width: 128px;
+  height: 128px;
+  transition: transform .4s;
+  --color-coin: var(--wp--preset--color--contrast, #000);
+  --color-coin-inv: var(--wp--preset--color--base, #FFF);
+}
+.has-contrast-background-color .peak-logo-svg {
+  --color-coin: var(--wp--preset--color--base, #FFF);
+  --color-coin-inv: var(--wp--preset--color--contrast, #000);
+}
+.peak-logo-svg-circle {
+  fill: var(--color-coin);
+  stroke: var(--color-coin);
+  stroke-width: 1px;
+  transition: fill .4s;
+
+}
+.peak-logo-svg-letters {
+  fill: var(--color-coin-inv);
+  transition: fill .4s;
+}
+
+.peak-logo-svg:hover {
+  transform: rotate(180deg);
+}
+.peak-logo-svg:hover .peak-logo-svg-circle {
+  fill: var(--color-coin-inv);
+}
+.peak-logo-svg:hover .peak-logo-svg-letters {
+  fill: var(--color-coin);
+}
